@@ -1,0 +1,26 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    login_bundle.security.user_provider:
+        class: Pimcore\Security\User\ObjectUserProvider
+        arguments: ['Divante\LoginBundle\Model\DataObject\User', 'username']
+
+    security.encoder_factory:
+        class: Pimcore\Security\Encoder\Factory\UserAwareEncoderFactory
+        arguments:
+        - Pimcore\Security\Encoder\PasswordFieldEncoder
+        - ['password']
+        public: true
+
+    Pimcore\Security\Encoder\PasswordFieldEncoder:
+        arguments:
+            - ['password']
+
+    Divante\LoginBundle\Service\PasswordService:
+        calls:
+            - method: setContainer
+              arguments:
+                  - '@service_container'

@@ -1,0 +1,4 @@
+pimcore:
+  models:
+    class_overrides:
+      'Pimcore\Model\DataObject\User': 'Divante\LoginBundle\Model\DataObject\User'

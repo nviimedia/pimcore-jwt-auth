@@ -1,0 +1,4 @@
+divante_user:
+    resource: "@DivanteUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
