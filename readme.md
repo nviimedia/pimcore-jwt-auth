@@ -1,4 +1,4 @@
-# <a name="jwt-module"></a>Pimcore 5 JWT module
+# JWT Auth
 
 This bundle provides JWT (Json Web Token) authentication for your Pimcore API.
 It is based on [`lexik/jwt-authentication-bundle`](https://packagist.org/packages/lexik/jwt-authentication-bundle)
@@ -18,12 +18,14 @@ It is compatible and tested with PHP 7.1 and Pimcore 5.x.
 	- [Standards & Code Quality](#standards)
 	- [About Authors](#authors)
 	
-## <a name="prerequisites"></a>Prerequisites	
+## Prerequisites
+
 This module requires Pimcore 5.x and openssl extension.
 
 **Protip:** Though the bundle doesn't enforce you to do so, it is highly recommended to use HTTPS. 
 
-## <a name="installation"></a>Installation
+## Installation
+
 Create User class in Pimcore:
 
 ![Screenshot](doc/images/user-class.png)
@@ -56,7 +58,8 @@ $ mv app/config/jwt/private.pem config/jwt/private.pem-back
 $ mv app/config/jwt/private2.pem config/jwt/private.pem
 ```
 
-## <a name="configuration"></a>Configuration
+## Configuration
+
 Configure the SSH keys path in your `app/config/lexik_jwt_authentication.yaml` :
 
 ``` yaml
@@ -137,7 +140,8 @@ api_login_check:
 ```
 
 
-## <a name="usage"></a>Usage	
+## Usage
+
 The first step is to authenticate the user using its credentials.
 A classical form_login on an anonymously accessible firewall will do perfect.
 
@@ -179,17 +183,23 @@ Maybe you want to use a **refresh token** to renew your JWT. In this case you ca
 
 For more details head to [LexikJWTAuthenticationBundle](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md)
  
-## <a name="standards"></a>Standards & Code Quality
+## Standards & Code Quality
 This module respects PSR-2 code quality rule and our own PHPCS and PHPMD rulesets.
 
-## <a name="authors"></a>About Authors
+## About Authors
 
-![Divante-logo](http://divante.co/logo-HG.png "Divante")
+![Divante-logo](https://divante.com/static/img/logo-new.svg "Divante")
 
-We are a Software House from Europe, existing from 2008 and employing about 150 people. Our core competencies are built around Magento, Pimcore and bespoke software projects (we love Symfony3, Node.js, Angular, React, Vue.js). We specialize in sophisticated integration projects trying to connect hardcore IT with good product design and UX.
+We are a Software House from Europe, existing from 2008 and employing about 150 people. 
+Our core competencies are built around Magento, Pimcore and bespoke software projects 
+(we love Symfony3, Node.js, Angular, React, Vue.js). We specialize in sophisticated integration projects trying to 
+connect hardcore IT with good product design and UX.
 
-We work for Clients like INTERSPORT, ING, Odlo, Onderdelenwinkel and CDP, the company that produced The Witcher game. We develop two projects: [Open Loyalty](http://www.openloyalty.io/ "Open Loyalty") - an open source loyalty program and [Vue.js Storefront](https://github.com/DivanteLtd/vue-storefront "Vue.js Storefront").
+We work for Clients like INTERSPORT, ING, Odlo, Onderdelenwinkel and CDP, the company that produced The Witcher game. 
+We develop two projects: [Open Loyalty](http://www.openloyalty.io/ "Open Loyalty") - an open source loyalty 
+program and [Vue.js Storefront](https://github.com/DivanteLtd/vue-storefront "Vue.js Storefront").
 
-We are part of the OEX Group which is listed on the Warsaw Stock Exchange. Our annual revenue has been growing at a minimum of about 30% year on year.
+We are part of the OEX Group which is listed on the Warsaw Stock Exchange. Our annual revenue has been growing at a
+minimum of about 30% year on year.
 
-Visit our website [Divante.co](https://divante.co/ "Divante.co") for more information.
+Visit our website [Divante.co](https://divante.com/ "Divante.com") for more information.
