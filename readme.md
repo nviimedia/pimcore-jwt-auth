@@ -3,7 +3,7 @@
 This bundle provides JWT (Json Web Token) authentication for your Pimcore API.
 It is based on [`lexik/jwt-authentication-bundle`](https://packagist.org/packages/lexik/jwt-authentication-bundle)
 
-It is compatible and tested with PHP 7.1 and Pimcore 5.x.
+It is compatible and tested with PHP 7 and Pimcore 6.
 
 **Table of Contents**
 
@@ -20,9 +20,7 @@ It is compatible and tested with PHP 7.1 and Pimcore 5.x.
 	
 ## Prerequisites
 
-This module requires Pimcore 5.x and openssl extension.
-
-**Protip:** Though the bundle doesn't enforce you to do so, it is highly recommended to use HTTPS. 
+This module requires Pimcore 6 and openssl extension.
 
 ## Installation
 
