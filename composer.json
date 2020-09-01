@@ -8,20 +8,24 @@
     "pimcore-plugin",
     "jwt"
   ],
-  "homepage": "https://divante.co",
+  "homepage": "https://divante.com",
   "authors": [
     {
       "name": "Michał Bolka",
       "email": "mbolka@divante.pl",
-      "homepage": "https://divante.co",
       "role": "PHP Developer"
+    },
+    {
+      "name": "Bruno Ramalho",
+      "email": "bramalho@divante.pl",
+      "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=7.1",
-    "pimcore/pimcore": "^5.1.0",
-    "lexik/jwt-authentication-bundle": "^2.5",
-    "nelmio/cors-bundle": "^1.5"
+    "php": ">=7.2",
+    "pimcore/pimcore": "~6.7.0",
+    "lexik/jwt-authentication-bundle": "^2.8",
+    "nelmio/cors-bundle": "^2.1"
   },
   "autoload": {
     "psr-4": {
