@@ -1,5 +1,5 @@
 {
-  "name": "divante-ltd/pimcore-jwt-auth",
+  "name": "nviimedia/pimcore-jwt-auth",
   "type": "pimcore-bundle",
   "license": "GPL-3.0-or-later",
   "description": "Module allowing to use JWT with Pimcore User object",
