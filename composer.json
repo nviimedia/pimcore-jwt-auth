@@ -23,7 +23,7 @@
   ],
   "require": {
     "php": ">=7.2",
-    "pimcore/pimcore": "~6.7.0",
+    "pimcore/pimcore": "~6.9.0",
     "lexik/jwt-authentication-bundle": "^2.8",
     "nelmio/cors-bundle": "^2.1"
   },
